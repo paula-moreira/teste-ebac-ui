@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
 
 before(() => {
-    cy.visit('http://lojaebac.ebaconline.art.br/produtos/')
+    cy.visit('produtos')
 });
 
 describe('Funcionalidade: Produtos', () => {
@@ -11,7 +11,7 @@ describe('Funcionalidade: Produtos', () => {
             //.first()
             //.last()
             //.eq(2)
-            .contains('Ajax Full-Zip Sweatshirt')
+            .contains('Aether Gym Pant')
             .click()
 
             cy.get('#tab-title-description > a').should('contain', 'Descrição')
